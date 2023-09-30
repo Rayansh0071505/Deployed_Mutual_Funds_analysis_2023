@@ -10,8 +10,11 @@ import seaborn as sns
 @st.cache(allow_output_mutation=True)
 def load_dataset():
     return pd.read_excel('modified_data.xlsx')
+def load_result():
+    return pd.read_excel('mf_cleaned.xlsx')
 
 data = load_dataset()
+result = load_result()
 
 # Here we are returning the 1-3-5 year returns
 # Inside the year_returns() function
@@ -593,6 +596,12 @@ def main():
     st.markdown("<div><h2> Good Schemes and Bad Schemes</h2><p><h5>Based on analysis on basis of parammeter we will distinguish between good and bad schemes</h5></div> ",unsafe_allow_html=True)
     distinguish_plot=distinguish()
     st.pyplot(distinguish_plot)
+    st.write('')
+    st.write('')
+
+
+    st.markdown("<div><h4>Displaying the Good schemes</h4></div",unsafe_allow_html=True)
+    st.write(result)
 
 if __name__ == '__main__':
     main()
