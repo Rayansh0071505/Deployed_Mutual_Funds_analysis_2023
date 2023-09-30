@@ -1,0 +1,13 @@
+What problem i face while making this project in app.py---
+
+-> in app.py use modified_data for loading and preprocessing , try to avoid adding new columns in data , alternative use that
+   preprocessing and modified the data in different python file
+
+-> for any preprocessing and any changes try to do inside function not openly
+-> in app.py while deploying in streamlit try to use set before everything like set_xlabel , see gpt for reference
+-> while deploying showing error so "ax.set_xticks(X, rotation='vertical')" so to solve it we do
+   "ax.set_xticks(X, rotation=90)
+
+Things must do 
+-> add requirement.txt file so while deploying file can install all dependencies
+-> for deploying use streamlit instead of flask and for deployment website try to use render its more easy and good
