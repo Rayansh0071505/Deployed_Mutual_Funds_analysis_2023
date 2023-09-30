@@ -11,7 +11,7 @@ import seaborn as sns
 def load_dataset():
     return pd.read_excel('modified_data.xlsx')
 def load_result():
-    return pd.read_excel('mf_cleaned.xlsx')
+    return pd.read_excel('good_schemes.xlsx')
 
 data = load_dataset()
 result = load_result()
