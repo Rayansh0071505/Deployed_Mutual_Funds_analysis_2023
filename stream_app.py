@@ -4,8 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
-
 # To load the data
 @st.cache(allow_output_mutation=True)
 def load_dataset():
@@ -209,7 +207,7 @@ def return_three():
     ax.set_ylabel('Returns in percentage', fontsize=24, fontname="Comic Sans MS")
     ax.set_title('3 Year Returns(%)', y=1.20, fontsize=24)
 
-    ax.set_xticks(X, rotation='vertical')
+    ax.set_xticks(X)
     ax.set_xticklabels(X, rotation='vertical')
     ax.grid()
 
@@ -281,7 +279,7 @@ def return_five_bar():
     ax.set_ylabel('Returns in percentage', fontsize=24, fontname="Comic Sans MS")
     ax.set_title('3 Year Returns(%)', y=1.20, fontsize=24)
 
-    ax.set_xticks(X, rotation='vertical')
+    ax.set_xticks(X)
     ax.set_xticklabels(X, rotation='vertical')
     ax.grid()
 
