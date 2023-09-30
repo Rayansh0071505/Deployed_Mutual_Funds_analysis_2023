@@ -161,8 +161,8 @@ def return_1yrs():
     ax.legend(labels, loc='upper right', fontsize=15)
 
     # Rotating x-axis labels and adding a grid
-    ax.set_xticks(X, rotation='vertical')
-    ax.set_xticklabels(X, rotation='vertical')
+    ax.set_xticks(range(len(X)))
+    ax.set_xticklabels(X, rotation=90)
     ax.grid()
 
     for i, j in zip(X, returns):
@@ -209,8 +209,8 @@ def return_three():
     ax.set_ylabel('Returns in percentage', fontsize=24, fontname="Comic Sans MS")
     ax.set_title('3 Year Returns(%)', y=1.20, fontsize=24)
 
-    ax.set_xticks(X, rotation='vertical')
-    ax.set_xticklabels(X, rotation='vertical')
+    ax.set_xticks(range(len(X)))
+    ax.set_xticklabels(X, rotation=90)
     ax.grid()
 
     for bar in bars:
@@ -281,8 +281,8 @@ def return_five_bar():
     ax.set_ylabel('Returns in percentage', fontsize=24, fontname="Comic Sans MS")
     ax.set_title('3 Year Returns(%)', y=1.20, fontsize=24)
 
-    ax.set_xticks(X, rotation='vertical')
-    ax.set_xticklabels(X, rotation='vertical')
+    ax.set_xticks(range(len(X)))
+    ax.set_xticklabels(X, rotation=90)
     ax.grid()
 
     for bar in bars:
@@ -311,8 +311,8 @@ def return_5yrs_graph():
     ax.legend(labels, loc='upper right', fontsize=15)
 
     # Rotating x-axis labels and adding a grid
-    ax.set_xticks(X, rotation='vertical')
-    ax.set_xticklabels(X, rotation='vertical')
+    ax.set_xticks(range(len(X)))
+    ax.set_xticklabels(X, rotation=90)
     ax.grid()
 
     for i, j in zip(X, returns):
